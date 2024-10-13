@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 210 100% 97%; /* Light background */
+    --foreground: 210 10% 20%;  /* Dark text */
+    --card: 255 255 255;         /* White card */
+    --card-foreground: 210 10% 20%; /* Dark text on card */
+    --popover: 255 255 255;      /* White popover */
+    --popover-foreground: 210 10% 20%; /* Dark text on popover */
+    --primary: 30 90% 50%;       /* Bright orange */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --secondary: 50 100% 50%;    /* Bright yellow */
+    --secondary-foreground: 210 10% 20%; /* Dark text on secondary */
+    --muted: 210 50% 95%;        /* Light gray */
+    --muted-foreground: 210 10% 20%; /* Dark text on muted */
+    --accent: 340 80% 50%;       /* Vibrant pink */
+    --accent-foreground: 0 0% 100%; /* White text on accent */
+    --destructive: 0 100% 50%;   /* Red for destructive actions */
+    --destructive-foreground: 0 0% 100%; /* White text on destructive */
+    --border: 0 0% 80%;          /* Light gray border */
+    --input: 210 100% 95%;       /* Very light gray for inputs */
+    --ring: 30 90% 50%;          /* Bright orange ring */
+    --chart-1: 10 90% 60%;       /* Chart color 1 */
+    --chart-2: 150 80% 40%;      /* Chart color 2 */
+    --chart-3: 200 60% 30%;      /* Chart color 3 */
+    --chart-4: 40 70% 70%;       /* Chart color 4 */
+    --chart-5: 270 60% 50%;      /* Chart color 5 */
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 210 10% 20%;   /* Dark background */
+    --foreground: 210 100% 95%;  /* Light text */
+    --card: 30 10% 15%;           /* Dark card */
+    --card-foreground: 210 100% 95%; /* Light text on card */
+    --popover: 30 10% 15%;        /* Dark popover */
+    --popover-foreground: 210 100% 95%; /* Light text on popover */
+    --primary: 30 80% 60%;        /* Darker orange */
+    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --secondary: 50 90% 60%;      /* Darker yellow */
+    --secondary-foreground: 210 100% 95%; /* Light text on secondary */
+    --muted: 30 20% 30%;          /* Muted dark gray */
+    --muted-foreground: 210 100% 95%; /* Light text on muted */
+    --accent: 340 70% 40%;        /* Darker pink */
+    --accent-foreground: 210 100% 95%; /* Light text on accent */
+    --destructive: 0 60% 50%;     /* Dark red for destructive actions */
+    --destructive-foreground: 210 100% 95%; /* Light text on destructive */
+    --border: 30 20% 30%;         /* Dark gray border */
+    --input: 30 20% 30%;          /* Dark gray for inputs */
+    --ring: 30 80% 40%;           /* Darker orange ring */
+    --chart-1: 220 70% 50%;       /* Chart color 1 */
+    --chart-2: 160 60% 40%;       /* Chart color 2 */
+    --chart-3: 30 70% 50%;        /* Chart color 3 */
+    --chart-4: 280 60% 60%;       /* Chart color 4 */
+    --chart-5: 340 70% 50%;       /* Chart color 5 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
